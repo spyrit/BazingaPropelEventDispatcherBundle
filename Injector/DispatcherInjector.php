@@ -32,7 +32,7 @@ class DispatcherInjector
     public function initializeModels()
     {
         foreach ($this->classes as $id => $class) {
-            $baseClass = sprintf('%s\\om\\Base%s',
+            $baseClass = sprintf('%s\\Base\\%s',
                 substr($class, 0, strrpos($class, '\\')),
                 substr($class, strrpos($class, '\\') + 1, strlen($class))
             );

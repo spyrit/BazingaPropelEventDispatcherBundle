@@ -1,9 +1,9 @@
 {
-    "name": "willdurand/propel-eventdispatcher-bundle",
+    "name": "marcj/propel-eventdispatcher-bundle",
     "description": "Integrates the Propel EventDispatcherBehavior into Symfony2.",
     "license": "MIT",
     "require": {
-        "willdurand/propel-eventdispatcher-behavior": "~1.0"
+        "marcj/propel-eventdispatcher-behavior": "1.0"
     },
     "require-dev": {
         "symfony/framework-bundle": "~2.1",
