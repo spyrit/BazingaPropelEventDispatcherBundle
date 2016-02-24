@@ -18,5 +18,10 @@
     "autoload": {
         "psr-0": { "Bazinga\\Bundle\\PropelEventDispatcherBundle": "" }
     },
-    "target-dir": "Bazinga/Bundle/PropelEventDispatcherBundle"
+    "target-dir": "Bazinga/Bundle/PropelEventDispatcherBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
 }
