@@ -88,6 +88,14 @@ class LazyEventDispatcher implements EventDispatcherInterface
     /**
      * {@inheritdoc}
      */
+    public function getListenerPriority($eventName, $listener)
+    {
+        return $this->getEventDispatcher()->getListenerPriority($eventName, $listener);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function hasListeners($eventName = null)
     {
         return $this->getEventDispatcher()->hasListeners($eventName);
