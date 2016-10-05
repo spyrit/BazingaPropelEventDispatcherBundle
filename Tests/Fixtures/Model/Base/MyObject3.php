@@ -1,11 +1,12 @@
 <?php
 
-namespace Bazinga\Bundle\PropelEventDispatcherBundle\Tests\Fixtures\Model\om;
+namespace Bazinga\Bundle\PropelEventDispatcherBundle\Tests\Fixtures\Model\Base;
 
+use EventDispatcherAwareModelInterface;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
-abstract class BaseMyObject3 implements \EventDispatcherAwareModelInterface
+abstract class MyObject3 implements EventDispatcherAwareModelInterface
 {
     private static $eventDispatcher;
 
