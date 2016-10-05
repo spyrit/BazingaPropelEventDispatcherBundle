@@ -1,7 +1,7 @@
 BazingaPropelEventDispatcherBundle
 ==================================
 
-[![Build Status](https://secure.travis-ci.org/willdurand/BazingaPropelEventDispatcherBundle.png?branch=master)](http://travis-ci.org/willdurand/BazingaPropelEventDispatcherBundle)
+[![Build Status](https://secure.travis-ci.org/spyrit/BazingaPropelEventDispatcherBundle.png?branch=master)](http://travis-ci.org/spyrit/BazingaPropelEventDispatcherBundle)
 
 Integrates the Propel
 [EventDispatcherBehavior](https://github.com/willdurand/EventDispatcherBehavior)
