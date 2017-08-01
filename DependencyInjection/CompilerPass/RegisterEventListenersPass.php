@@ -2,7 +2,6 @@
 
 namespace Bazinga\Bundle\PropelEventDispatcherBundle\DependencyInjection\CompilerPass;
 
-use Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
@@ -42,7 +41,7 @@ class RegisterEventListenersPass implements CompilerPassInterface
                     ->getDispatcherForClass($container, $attrs['class'])
                     ->addMethodCall('addListener', array(
                         $event['event'],
-                        array(new ServiceClosureArgument(new Reference($id)), $event['method']),
+                        array(new Reference($id), $event['method']),
                         $priority,
                     ));
             }
@@ -68,7 +67,7 @@ class RegisterEventListenersPass implements CompilerPassInterface
                 ExtractingEventDispatcher::$subscriber = $class;
                 $extractingDispatcher->addSubscriber($extractingDispatcher);
                 foreach ($extractingDispatcher->listeners as $args) {
-                    $args[1] = array(new ServiceClosureArgument(new Reference($id)), $args[1]);
+                    $args[1] = array(new Reference($id), $args[1]);
 
                     $this->getDispatcherForClass($container, $attrs['class'])
                         ->addMethodCall('addListener', $args);
