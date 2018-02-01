@@ -1,6 +1,6 @@
 {
     "name": "spyrit/propel-eventdispatcher-bundle",
-    "description": "Integrates the Propel EventDispatcherBehavior into Symfony2.",
+    "description": "Integrates the Propel EventDispatcherBehavior into Symfony3.",
     "license": "MIT",
     "require": {
         "marcj/propel-eventdispatcher-behavior": "dev-master"
